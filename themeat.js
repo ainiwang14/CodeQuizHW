@@ -6,13 +6,13 @@
 
 var myQuestions = [
     {
-        question: "Palmistry—the art of understanding an individual's present personality and predicting his or her future state through the study of the shape, size, and lines of the hands—is an unscientific technique. In a study, most palmists' assertions about the present financial status of the individuals in the sample population were found to be mere intelligent guesses. Which one of the following is an assumption necessary to the argument?",
-        A: "Individuals with the same financial status usually do not have a similar personality.",
-        B: "There is a stable correlation between an individual's personality and his or her financial status.",
-        C: "Palmistry is an effective means of predicting how personalities of individuals evolve over the long term.",
-        D: "There are numerous other methods for understanding the personality of an individual that are more precise than palmistry.",
-        E: "The financial future of a person is one of the most important concerns that palmists address.",
-        correct: "B"
+        question: "Lecturer: There are many benefits to connecting everyday objects like cars and home appliances to the internet to enable their owners to manage them remotely. But beware of doing so! With the rising number and variety of devices connected to it, the internet is becoming more complex and, consequently, more prone to security breaches by hackers. The consequences of a security breach are much graver with an internet-connected car or home appliance than with an internet-connected computer and might even include a risk to the life of the owner of these objects. Which one of the following most accurately expresses the main conclusion of the lecturer's argument?",
+        A: "The gravity of the consequences suffered by the owner of an internet-connected car or home appliance in the event of a security breach outweighs the benefits that these devices offer.",
+        B: "Owners of cars and home appliances should be cautious and alert to the dangers of connecting these objects to the internet.",
+        C: "A security breach of a car or home appliance that is connected to the internet can be much more dangerous than a security breach of an internet-connected computer.",
+        D: "The vulnerability of the internet to security breaches is directly proportional to the number and variety of the devices connected to the internet.",
+        E: "The increasing connection of everyday objects such as cars and home appliances to the internet in the recent years has increased the overall vulnerability of the internet to security breaches.",
+        correct: "B",
     }
     {
         question: "Each year, the number of students caught copying in examination is nearly the same as the number of students caught driving without a valid driving license and the number of students caught traveling without a valid ticket. Therefore, the outcry about copying in examination ought to be put to rest, as the act of copying in examination is in fact almost as mundane as the acts of driving without a valid driving license or traveling without a valid ticket. Which one of the following, if true, would most effectively undermine the author's argument?",
@@ -31,6 +31,15 @@ var myQuestions = [
         D: "be an actress belonging to a mainstream theatre group",
         E: "have won an award for some other mainstream work",
         correct: "C",
+    }
+    {
+        question: "This year, the cotton crop in Alabama has been attacked by a new, hardy variety of bollworm that is resistant to all known pesticides. Due to this, the cotton production of the state has declined by 40 percent this year. Since this bollworm variety reproduces rapidly, it is likely to spread through all cotton-producing states of the United States by the next year and, therefore, we can expect a decline of at least 40 percent in the amount of cotton produced in the country next year. Which one of the following, if true, most weakens the argument?",
+        A: "Many other crops in Alabama too have been attacked by this bollworm variety this year.",
+        B: "The natural predators of this bollworm variety are not able to survive in Alabama while cotton-farms in other cotton-producing states have large populations of these predators.",
+        C: "Ninety-five percent of all cotton produced in the United States is of the Upland variety, which is also the only variety of cotton that is grown in Alabama.",
+        D: "The domestic prices of cotton are not likely to increase next year as the United States will be able to meet its domestic demand for cotton through imports.",
+        E: "Agricultural scientists in the United States are making a massive effort to soon develop a variety of genetically-modified cotton that is resistant to this bollworm variety.",
+        correct: "B"
     }
     {
         question: "A metropolitan area that has a population of more than 10 million and a population density of more than 2000 people per square kilometer is termed a megacity. Among the metropolitan areas of the United States, X and Z are megacities but Y is not. If the statements prior are true, each of the following statements must also be true EXCEPT:",
@@ -78,22 +87,13 @@ var myQuestions = [
         correct: "D",
     }
     {
-        question: "Lecturer: There are many benefits to connecting everyday objects like cars and home appliances to the internet to enable their owners to manage them remotely. But beware of doing so! With the rising number and variety of devices connected to it, the internet is becoming more complex and, consequently, more prone to security breaches by hackers. The consequences of a security breach are much graver with an internet-connected car or home appliance than with an internet-connected computer and might even include a risk to the life of the owner of these objects. Which one of the following most accurately expresses the main conclusion of the lecturer's argument?",
-        A:
-        B:
-        C:
-        D:
-        E:
-        correct:
-    }
-    {
-        question:
-        A:
-        B:
-        C:
-        D:
-        E:
-        correct:
+        question: "Palmistry—the art of understanding an individual's present personality and predicting his or her future state through the study of the shape, size, and lines of the hands—is an unscientific technique. In a study, most palmists' assertions about the present financial status of the individuals in the sample population were found to be mere intelligent guesses. Which one of the following is an assumption necessary to the argument?",
+        A: "Individuals with the same financial status usually do not have a similar personality.",
+        B: "There is a stable correlation between an individual's personality and his or her financial status.",
+        C: "Palmistry is an effective means of predicting how personalities of individuals evolve over the long term.",
+        D: "There are numerous other methods for understanding the personality of an individual that are more precise than palmistry.",
+        E: "The financial future of a person is one of the most important concerns that palmists address.",
+        correct: "B"
     }
 ]
 
