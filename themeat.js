@@ -6,7 +6,9 @@
 
 //event listeners for button clicks
 
-//create var timer = 100 i guess
+//create var timer = 500 i guess
+
+//timer should decrement every second
 
 //create var for lastQuestionIndex which equals (myQuestions.length - 1)
 
@@ -26,10 +28,24 @@
 
 //in checkAnswer function, set up if/else where if(questions[runningQuestionIndex].correct == answer) and result is next question
 
-//in checkAnswer function, else will be score - 10 or something
+//in checkAnswer function, else will be timer - 10 or something
 
 //to run through the questions, in checkAnswer function set another if/else
 
 //if(runningQuestionIndex < lastQuestionIndex) then count = 0; runningQuestionIndex++; questionRender();
 
 //else end quiz and display score
+
+//make input box to submit user score
+
+//make array to contain highScores
+
+//make var userScore to save user's high score as an object pair of name and score
+
+//append userScore to highScores
+
+//use JSON.stringify(highScores) to set item to local storage
+
+//use JSON.parse(highScores) to retrieve object from local storage
+
+//use .textContent to make high scores visible in div #quiz

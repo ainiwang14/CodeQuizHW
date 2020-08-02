@@ -1,0 +1,47 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* background-image: ; */
+}
+
+header {
+    font-size: 30px;
+}
+
+.content {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#quiz {
+    width: 320px;
+    background-color: lightblue;
+    padding: 10px;
+    margin: 0;
+}
+
+#question {
+    width: 320px;
+    background-color: lightcoral;
+    padding: 10px;
+    margin: 0;
+}
+
+#time {
+    width: 320px;
+    background-color: lightseagreen;
+    padding: 10px;
+    margin: 0;
+}
+
+#choices {
+    width: 320px;
+    background-color: lightgoldenrodyellow;
+    padding: 10px;
+    margin: 0;
+}
+
+.choice {
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 5px;
+}
