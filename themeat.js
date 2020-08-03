@@ -110,9 +110,32 @@ var myQuestions = [
 
 //event listeners for button clicks
 
+start.addEventListener("click", startQuiz);
+
 //create var timer = 500 i guess probably more tbh
 
 //timer should decrement every second
+
+function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = duration;
+        }
+    }, 1000);
+    if (timer = -1) {
+        alert("OUT OF TIME")
+        return
+    }
+}
 
 //create var for lastQuestionIndex which equals (myQuestions.length - 1)
 
@@ -128,15 +151,15 @@ var myQuestions = [
 
 //when runningQuestionIndex = 0, first question will render when function is run; to render subsequent questions, increment runningQuestionIndex++
 
-start.addEventListener("click", startQuiz);
-
 function startQuiz() {
     start.style.display = "none";
     quizContent.style.display = "block";
+    var twentyMinutes = 60 * 20;
+    startTimer (twentyMinutes,timer);
     renderQuestion;
 
     function renderQuestion() {
-        var runningQuestionIndex = myQuestions.length - 1;
+        var lastQuestion = myQuestions.length - 1;
         runningQuestionIndex = 0;
         var q = myQuestions[runningQuestionIndex];
         question.innerHTML = "<p>" + q.question + "</p>";
@@ -145,7 +168,16 @@ function startQuiz() {
         choiceC.innerHTML = q.choiceC;
         choiceD.innerHTML = q.choiceD;
         choiceE.innerHTML = q.choiceE;
-        runningQuestionIndex++;
+        checkAnswer;
+
+        function checkAnswer(answer) {
+            if(answer == questions[runningQuestionIndex].correct || runningQuestionIndex < lastQuestion) {
+                runningQuestionIndex++;
+            }
+            else {
+                //in checkAnswer function, else will be timer - 10 or something
+            }
+        }
     }
 }
 
@@ -154,8 +186,6 @@ function startQuiz() {
 //to check answer, make function checkAnswer(answer)
 
 //in checkAnswer function, set up if/else where if(questions[runningQuestionIndex].correct == answer) and result is next question
-
-//in checkAnswer function, else will be timer - 10 or something
 
 //to run through the questions, in checkAnswer function set another if/else
 
