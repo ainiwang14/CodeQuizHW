@@ -18,6 +18,12 @@ header {
     padding-left: 20px;
     padding-right: 20px;
     margin: 125px;
+    width: 400px;
+    height: 500px;
+}
+
+#anotherBox {
+
 }
 
 #question {

@@ -1,6 +1,6 @@
 //select html elements
 
-var start = document.getElementById("btn");
+var start = document.getElementById("start");
 var quizContent = document.getElementById("quizContent");
 var question = document.getElementById("question");
 var choiceA = document.getElementById("A");
@@ -128,17 +128,25 @@ var myQuestions = [
 
 //when runningQuestionIndex = 0, first question will render when function is run; to render subsequent questions, increment runningQuestionIndex++
 
-function renderQuestion() {
-    var runningQuestionIndex = myQuestions.length - 1;
-    runningQuestionIndex = 0;
-    var q = questions[runningQuestionIndex];
-    question.innerHTML = "<p>" + q.question + "</p>";
-    choiceA.innerHTML = q.choiceA;
-    choiceB.innerHTML = q.choiceB;
-    choiceC.innerHTML = q.choiceC;
-    choiceD.innerHTML = q.choiceD;
-    choiceE.innerHTML = q.choiceE;
-    runningQuestionIndex++;
+start.addEventListener("click", startQuiz);
+
+function startQuiz() {
+    start.style.display = "none";
+    quizContent.style.display = "block";
+    renderQuestion;
+
+    function renderQuestion() {
+        var runningQuestionIndex = myQuestions.length - 1;
+        runningQuestionIndex = 0;
+        var q = myQuestions[runningQuestionIndex];
+        question.innerHTML = "<p>" + q.question + "</p>";
+        choiceA.innerHTML = q.choiceA;
+        choiceB.innerHTML = q.choiceB;
+        choiceC.innerHTML = q.choiceC;
+        choiceD.innerHTML = q.choiceD;
+        choiceE.innerHTML = q.choiceE;
+        runningQuestionIndex++;
+    }
 }
 
 
