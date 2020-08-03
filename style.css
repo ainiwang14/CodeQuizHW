@@ -1,6 +1,10 @@
 * {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    /* background-image: ; */
+}
+
+body {
+    background-image: url("clarence-impala.jpg");
+    background-size: cover;
 }
 
 header {
