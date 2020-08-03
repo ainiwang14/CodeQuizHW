@@ -11,6 +11,7 @@ var choiceE = document.getElementById("E");
 var timer = document.getElementById("time");
 var score = document.getElementById("score");
 var checkUser = document.getElementById("checkUser");
+var submitScoreButton = document.getElementById("submitScoreButton");
 
 //write questions in an array called "myQuestions"
 
@@ -132,10 +133,6 @@ function startTimer(duration, display) {
             timer = duration;
         }
     }, 1000);
-    if (timer = -1) {
-        alert("OUT OF TIME")
-        return
-    }
 }
 
 //create var for lastQuestionIndex which equals (myQuestions.length - 1)
@@ -193,13 +190,17 @@ function startQuiz() {
                 runningQuestionIndex++;
             }
             else {
-                //end quiz
+                localStorate.setItem("mostRecentScore", score);
+                return window.location.assign("/end.html")
             }
         }
     }
 }
 
 //make input box to submit user score
+
+var mostRecentScore = localStorage.getItem("mostRecentScore");
+finalscore.innerHTML = mostRecentScore;
 
 //make array to contain highScores
 
@@ -210,5 +211,12 @@ function startQuiz() {
 //use JSON.stringify(highScores) to set item to local storage
 
 //use JSON.parse(highScores) to retrieve object from local storage
+
+submitScoreButton.addEventListener("click", saveScore);
+
+function saveScore() {
+    preventDefault();
+    localStorage.setItem("")
+}
 
 //use .textContent to make high scores visible in div #quiz

@@ -5,13 +5,15 @@
 body {
     background-image: url("clarence-impala.jpg");
     background-size: cover;
+    justify-content: center;
+
 }
 
 header {
     font-size: 30px;
 }
 
-.content {
+.container {
     background-color: lightblue;
     padding-top: 6px;
     padding-bottom: 20px;
@@ -20,10 +22,7 @@ header {
     margin: 125px;
     width: 400px;
     height: 500px;
-}
-
-#anotherBox {
-
+    align-content: center;
 }
 
 #question {
