@@ -9,9 +9,10 @@ var choiceC = document.getElementById("C");
 var choiceD = document.getElementById("D");
 var choiceE = document.getElementById("E");
 var timer = document.getElementById("time");
-var score = document.getElementById("score");
+var finalScore = document.getElementById("finalScore");
 var checkUser = document.getElementById("checkUser");
 var submitScoreButton = document.getElementById("submitScoreButton");
+var username = document.getElementById("username");
 
 //write questions in an array called "myQuestions"
 
@@ -199,8 +200,8 @@ function startQuiz() {
 
 //make input box to submit user score
 
-var mostRecentScore = localStorage.getItem("mostRecentScore");
-finalscore.innerHTML = mostRecentScore;
+//use .textContent to make high scores visible in div #quiz
+
 
 //make array to contain highScores
 
@@ -210,13 +211,23 @@ finalscore.innerHTML = mostRecentScore;
 
 //use JSON.stringify(highScores) to set item to local storage
 
-//use JSON.parse(highScores) to retrieve object from local storage
+var mostRecentScore = localStorage.getItem("mostRecentScore");
+finalscore.innerText = mostRecentScore;
 
+var latestScores = JSON.parse(localStorage.getItem("latestScores"));
 submitScoreButton.addEventListener("click", saveScore);
+
+localStorage.setItem("latestScores", JSON.stringify([latestScores]));
 
 function saveScore() {
     preventDefault();
+
+    var finalScore = {
+        score: mostRecentScore,
+        name: username.value
+    }
+    latestScores.push(finalScore)
     localStorage.setItem("")
 }
 
-//use .textContent to make high scores visible in div #quiz
+//use JSON.parse(highScores) to retrieve object from local storage
