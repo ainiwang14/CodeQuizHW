@@ -10,6 +10,7 @@ var choiceD = document.getElementById("D");
 var choiceE = document.getElementById("E");
 var timer = document.getElementById("time");
 var score = document.getElementById("score");
+var checkUser = document.getElementById("checkUser");
 
 //write questions in an array called "myQuestions"
 
@@ -171,11 +172,19 @@ function startQuiz() {
         checkAnswer;
 
         function checkAnswer(answer) {
-            if(answer == questions[runningQuestionIndex].correct || runningQuestionIndex < lastQuestion) {
-                runningQuestionIndex++;
+            if(checkAnswer == questions[runningQuestionIndex].correct) {
+                checkUser.innerHTML = "<p> correct! </p>";
             }
             else {
                 //in checkAnswer function, else will be timer - 10 or something
+                checkUser.innerHTML = "<p> incorrect! -10 seconds! </p>";
+                startTimer - 10;
+            }
+            if(runningQuestion < lastQuestion) {
+                runningQuestionIndex++;
+            }
+            else {
+                //end quiz
             }
         }
     }
