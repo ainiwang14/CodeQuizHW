@@ -171,6 +171,15 @@ function startQuiz() {
         choiceE.innerHTML = q.choiceE;
         checkAnswer;
 
+//to check answer, make function checkAnswer(answer)
+
+//in checkAnswer function, set up if/else where if(questions[runningQuestionIndex].correct == answer) and result is next question
+
+//to run through the questions, in checkAnswer function set another if/else
+
+//if(runningQuestionIndex < lastQuestionIndex) then count = 0; runningQuestionIndex++; questionRender();
+
+//else end quiz and display score
         function checkAnswer(answer) {
             if(checkAnswer == questions[runningQuestionIndex].correct) {
                 checkUser.innerHTML = "<p> correct! </p>";
@@ -178,7 +187,7 @@ function startQuiz() {
             else {
                 //in checkAnswer function, else will be timer - 10 or something
                 checkUser.innerHTML = "<p> incorrect! -10 seconds! </p>";
-                startTimer - 10;
+                //decrease timer startTimer - 10;
             }
             if(runningQuestion < lastQuestion) {
                 runningQuestionIndex++;
@@ -189,18 +198,6 @@ function startQuiz() {
         }
     }
 }
-
-
-
-//to check answer, make function checkAnswer(answer)
-
-//in checkAnswer function, set up if/else where if(questions[runningQuestionIndex].correct == answer) and result is next question
-
-//to run through the questions, in checkAnswer function set another if/else
-
-//if(runningQuestionIndex < lastQuestionIndex) then count = 0; runningQuestionIndex++; questionRender();
-
-//else end quiz and display score
 
 //make input box to submit user score
 
