@@ -1,6 +1,7 @@
 //select html elements
 
-var quiz = document.getElementById("quiz");
+var start = document.getElementById("btn");
+var quizContent = document.getElementById("quizContent");
 var question = document.getElementById("question");
 var choiceA = document.getElementById("A");
 var choiceB = document.getElementById("B");
@@ -8,6 +9,7 @@ var choiceC = document.getElementById("C");
 var choiceD = document.getElementById("D");
 var choiceE = document.getElementById("E");
 var timer = document.getElementById("time");
+var score = document.getElementById("score");
 
 //write questions in an array called "myQuestions"
 
